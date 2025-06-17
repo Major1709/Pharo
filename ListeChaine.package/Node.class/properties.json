@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "2025-06-17T01:41:17.207594+03:00",
+	"super" : "Object",
+	"category" : "ListeChaine",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"value",
+		"nextNode"
+	],
+	"name" : "Node",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "2025-06-17T01:40:52.280552+03:00",
+	"super" : "Object",
+	"category" : "ListeChaine",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nodeHead"
+	],
+	"name" : "Mylist",
+	"type" : "normal"
+}
