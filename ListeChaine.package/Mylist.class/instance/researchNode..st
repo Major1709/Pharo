@@ -3,7 +3,7 @@ researchNode: asInteger
 	| nodeActual i|
 	
 	nodeActual := nodeHead.
-	i := 1.
+	i := 0.
 	
 	self empty.
    self indexValid: asInteger.
