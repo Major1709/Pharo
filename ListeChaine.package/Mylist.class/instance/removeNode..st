@@ -2,23 +2,24 @@ removing
 removeNode: asInteger
 
 	| nodeActual nodeNext i |
-	nodeActual := nodeHead.
-	nodeNext := nodeActual nextNode.
-	i := 1.
 	
-	asInteger isInteger ifFalse: [
-		^ 'Les indices doivent être des entiers' ].
+	self empty.
+   self indexValid: asInteger.
 
-	asInteger == 0 ifTrue: [
+	nodeActual := nodeHead.
+	nodeNext := nodeActual ifNotNil: [ nodeActual nextNode ].
+	i := 0.
+
+	asInteger = 0 ifTrue: [
 			nodeHead := nodeNext.
 			^ asInteger asString , ' index removed' ].
 
-	[ nodeActual isNil ] whileFalse: [
-			asInteger == i ifTrue: [
+	[ nodeNext notNil ] whileTrue: [
+			i := i + 1.
+			asInteger = i ifTrue: [
 					nodeActual nextNode: nodeNext nextNode.
 					^ asInteger asString , ' index removed' ].
 			nodeActual := nodeNext.
-			nodeNext := nodeNext nextNode.
-			i := i + 1 ].
+			nodeNext := nodeNext nextNode ].
 
-	^ 'index not Found'
+	^ 'Index hors limites'

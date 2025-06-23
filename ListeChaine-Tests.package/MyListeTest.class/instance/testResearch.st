@@ -7,6 +7,6 @@ testResearch
 	mylist addNode: 'ProfStef'.
 	mylist addNode: 5.
 	
-	mylist researchNode: 2. "cherche le node à l'index 2: true"
+	mylist researchNode: 20. "cherche le node à l'index 2: true"
 	
 	mylist show.

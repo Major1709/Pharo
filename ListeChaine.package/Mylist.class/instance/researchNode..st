@@ -5,8 +5,8 @@ researchNode: asInteger
 	nodeActual := nodeHead.
 	i := 1.
 	
-	asInteger isInteger ifFalse: [
-		^ 'Les indices doivent être des entiers' ].
+	self empty.
+   self indexValid: asInteger.
 	
 	[ nodeActual isNil ] whileFalse: [
 	(asInteger == i) ifTrue: [ 

@@ -7,6 +7,6 @@ testRemove
 	mylist addNode: 'ProfStef'.
 	mylist addNode: 5.
 	
-	mylist removeNode: 3. " supprime le node à l'index 3 : 10@20"
+	mylist removeNode: 0. " supprime le node à l'index 3 : 10@20"
 	
 	mylist show.

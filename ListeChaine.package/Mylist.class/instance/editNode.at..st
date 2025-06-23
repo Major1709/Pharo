@@ -3,10 +3,8 @@ editNode: data at: asInteger
 | nodeActual i|
 	nodeActual := nodeHead.
 	i := 0.
-	
-	asInteger isInteger ifFalse: [
-		^ 'Les indices doivent être des entiers' ].
-	
+	self empty.
+   self indexValid: asInteger.
 	[ nodeActual isNil ] whileFalse: [
 	(asInteger == i) ifTrue: [ 
 		nodeActual value: data.
