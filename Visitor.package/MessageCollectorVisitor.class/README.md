@@ -1,0 +1,1 @@
+MessageCollectorVisitor qui filtre les sélecteurs

@@ -1,0 +1,1 @@
+TestMessageCollectorVisitor qui filtre les sélecteurs de SUnit (comme assert:, deny:, etc.).

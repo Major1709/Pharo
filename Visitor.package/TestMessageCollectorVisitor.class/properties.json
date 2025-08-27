@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "2025-08-27T22:23:07.056906+03:00",
+	"super" : "OCProgramNodeVisitor",
+	"category" : "Visitor",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"messages"
+	],
+	"name" : "TestMessageCollectorVisitor",
+	"type" : "normal"
+}

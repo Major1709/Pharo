@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "2025-08-27T22:24:33.637742+03:00",
+	"super" : "Object",
+	"category" : "Analyzer",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fingerprints",
+		"graph"
+	],
+	"name" : "FingerprintComparator",
+	"type" : "normal"
+}
