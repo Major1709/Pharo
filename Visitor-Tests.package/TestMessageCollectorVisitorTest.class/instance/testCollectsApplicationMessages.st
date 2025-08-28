@@ -1,6 +1,6 @@
 testing
 testCollectsApplicationMessages
-   | ast visitor |
+   | ast visitor expected |
    ast := RBParser parseMethod: '
 testBuildPublicationPage
    | builder |
@@ -11,5 +11,6 @@ testBuildPublicationPage
    visitor := TestMessageCollectorVisitor new.
    ast acceptVisitor: visitor.
 
-   self assert: visitor messages asArray sort equals:
-      #(rawPath: buildPublicationPage: publicationPageName sections isNotEmpty) sort.
+   expected := #(rawPath: buildPublicationPage: publicationPageName sections isNotEmpty).
+
+   self assert: visitor messages asSortedCollection equals: expected asSortedCollection.
